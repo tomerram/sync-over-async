@@ -1,5 +1,6 @@
 import asyncio
 import logging
+import os
 import sys
 import httpx
 
@@ -10,8 +11,8 @@ logging.basicConfig(
     handlers=[logging.StreamHandler(sys.stdout)],
 )
 
-CLIENT_A_URL = "http://localhost:8001"
-CLIENT_B_URL = "http://localhost:8002"
+CLIENT_A_URL = os.getenv("CLIENT_A_URL", "http://localhost:8001")
+CLIENT_B_URL = os.getenv("CLIENT_B_URL", "http://localhost:8002")
 
 
 async def check_services_ready(client: httpx.AsyncClient) -> bool:
