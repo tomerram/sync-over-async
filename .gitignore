@@ -1,0 +1,30 @@
+# PyCharm project settings
+.idea/
+
+# Python byte-code / cached files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments (virtualenv, venv, conda)
+.venv/
+venv/
+ENV/
+env/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Build & packaging artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Distribution / Celery / Jupyter / Testing
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
